@@ -1,0 +1,78 @@
+body {
+    color: var(--faded-glory);
+}
+
+nav{
+    border-bottom: 3px hsl(51, 100%, 30%) double;
+    padding-top: 5px;
+    text-align: right;
+}
+a {
+    font-size: 18pt;
+}
+a:visited{
+    color: var(--faded-glory);
+    
+}
+a:hover{
+    text-shadow: 1px 1px 7px white;
+    color: rgb(200, 200, 200, 40);
+    font-size: 
+}
+ul {
+    display: grid;
+    justify-items: end;
+    grid-template-columns: repeat(6, 1fr);
+    
+    margin: 0 10px 0 10px;
+}
+li{
+}
+
+h1{
+    font-size: 40pt;
+    text-align: center;
+    margin: 20px;
+}
+h2{
+    font-size: 30pt;
+    margin: 5px;
+}
+h3{
+    font-size: 20pt;
+    margin: 5px;
+    
+    transform: rotate(-8deg);
+    position: relative;
+    top: -50px;
+}
+.food-cat{
+    padding: 15px;
+    margin: 5px;
+    border: 4px var(--faded-glory) double;
+}
+.food-type{
+    padding: 10px;
+    outline: 1px darkcyan solid;
+}
+.carousel{
+    margin: 10px;
+    outline: 1px solid pink;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.image-holder{
+    outline: 1px solid green;
+    width: 10%;
+}
+img{
+    width: 100%;
+    max-height: 100%;
+}
+@media screen and (max-width: 960px) {
+    a {
+        font-size: 14pt;
+    }
+    
+}

@@ -1,0 +1,169 @@
+/* align sprocket holes - done*/
+/* make film bands smaller - or align w images - done */
+/* align link 'back to top' */
+/* make responsive for phone and desktop */
+/* implement full screen view */
+/* make variable for 'my-gold' - done */
+/* implement sticky focus - done and then removed */
+/* put a nav bar ontop or somewhere - and a footer - done*/
+/* implement image jump - done */
+/* make stylistically consistent w front page */
+/* implement empty or image selector - i.e. serve an empty if image is not loaded */
+
+a {
+    border: none;
+    outline: none;
+}
+nav{
+    background-color: #281e27;
+    border-bottom: 2px solid var(--faded-glory);
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.nav-link{
+    text-align: center;    
+    height: 50px;
+    padding-top: 15px;
+}
+.nav-link:nth-child(-n+5){
+    border-right: 1px solid var(--faded-glory);
+}
+.nav-link:hover{
+    background-color: #473646;
+}
+#page-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#viewer-section {
+    --backing: black;
+    --sub-shine: rgba(87, 85, 85, 0.116); 
+    --highlight: rgba(102, 102, 102, 0.171);
+    background-image: repeating-linear-gradient(25deg, 
+    var(--backing) 0px 120px,
+    var(--sub-shine) 120px 290px,
+    var(--highlight) 290px 490px,
+    var(--backing) 490px);
+    
+    margin: 0 10px 0 10px;
+    border-left: 3px double var(--faded-glory);
+    border-right: 3px double var(--faded-glory);
+}
+.photo-section{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    justify-items:baseline;
+}
+.sprocket-section{
+    margin-top: 15px;
+    height: 650px;
+    display: grid;
+}
+.sprocket-section:first-of-type{
+    margin-left: 20px;
+}
+.sprocket-section:last-of-type{
+    margin-right: 20px;
+}
+#empty{
+    --viewer-border-top-btm: 15; 
+    --viewer-border-sides: 10; 
+
+    top: -1px;
+
+    margin: calc(var(--viewer-border-top-btm)*1px) calc(var(--viewer-border-sides)*1px) calc(var(--viewer-border-top-btm)*1px) calc(var(--viewer-border-sides)*1px);
+    
+    height: 70vh;
+    max-width: 100%;
+    
+    background-color: lavender;
+    background-image: linear-gradient(25deg, hsl(240, 67%, 90%) 30%, hsl(240, 67%, 84%) 30% 40%, lavender 40%);
+    border: 4px double var(--faded-glory);
+}
+.picture-holder{
+    --viewer-border-top-btm: 15; 
+    --viewer-border-sides: 5; 
+    margin: calc(var(--viewer-border-top-btm)*1px) calc(var(--viewer-border-sides)*1px) calc(var(--viewer-border-top-btm)*1px) calc(var(--viewer-border-sides)*1px);
+
+    border: 4px double var(--faded-glory);
+
+    height: 650px;
+    width: 90%;
+    display: grid;
+    justify-self: center;
+    justify-items: center;
+    align-content: center;
+}
+.picture {
+    max-width: 100%;
+    max-height: 100%;
+}
+#previews-section {
+    position:sticky;
+    bottom: 100px;
+}
+#holder{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+}
+#holder a{
+    border-radius: 10px 100px 30px 100px;
+    display: grid;
+    align-content: center;
+    --s: 10px;
+    padding: var(--s);
+    border: calc(2 * var(--s)) solid #0000;
+    outline: 1px solid #0000;
+    outline-offset: calc(-1 * var(--s));
+    background: conic-gradient(from 90deg at 5px 1px, #0000 25%, var(--faded-glory) 0);
+}
+.photoframe{
+    width: 50px;
+    max-height: 100%;
+    aspect-ratio: inherit;
+    /* border: 3px double gold; */
+    z-index: 0;
+    transition: 0.5s;
+}
+.photoframe:hover {
+    scale: 1.1;
+    z-index: 1;   
+}
+.photoframe:active{
+    border: 3px double purple;
+    transition: 0s;
+}
+#rule {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--faded-glory);
+}
+#toplink {
+    width: 100%;
+    text-align: center;
+}
+#toplink a{
+    background: none;
+    font-size: 30pt;
+    color: rgb(161, 161, 161);
+}
+#toplink a:hover{
+    color: white;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    justify-content: end;
+    align-content: center;
+    background-color: #281e27;
+    height: 50px;
+    padding: 0 10px 0 10px;
+}
+footer a{
+    justify-self: start;
+
+}
