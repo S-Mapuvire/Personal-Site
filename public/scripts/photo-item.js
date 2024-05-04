@@ -1,12 +1,12 @@
-const imageList = ["1 isle in mist - far (1).jpg", "20230612_164537.jpg", "=maybe crop？.jpg", "Arrow of Light.jpg", "Blue Candidate #1.jpg", "Coldplay Day - Behind the Shed (4).jpg","Diurnal Fall (3).jpg", "early morning fence (3).jpg", "Gate to the World.jpg", "In the Shadow.jpg", "Into the painting.jpg", "light over the land (4).jpg", "macro shot 2.jpg", "misty morning (4).jpg", "Puddle.jpg", "red eye over yonder (2).jpg", "silver light morning (10).jpg", "smoky grass fire - panorama - far shot - edit.jpg", "smoky grass fire - panorama - near shot - edit.jpg", "spectral path (1).jpg", "This Exit's Taken.jpg", "towers-2.jpg", "watch the limit (2).jpg"];
+const imageList = ["1 isle in mist - far (1).jpg", "20230612_164537.jpg", "=maybe crop？.jpg", "Arrow of Light.jpg", "Blue Candidate.jpg", "Coldplay Day - Behind the Shed (4).jpg","Diurnal Fall (3).jpg", "early morning fence (3).jpg", "Gate to the World.jpg", "In the Shadow.jpg", "Into the painting.jpg", "light over the land (4).jpg", "macro shot 2.jpg", "misty morning (4).jpg", "Puddle.jpg", "red eye over yonder (2).jpg", "silver light morning (10).jpg", "smoky grass fire - panorama - far shot - edit.jpg", "smoky grass fire - panorama - near shot - edit.jpg", "spectral path (1).jpg", "This Exit's Taken.jpg", "towers-2.jpg", "watch the limit (2).jpg"];
 
-const imageFolder = "../public/images/photos/";
+const imageFolder = "images/photos/";
 
 let container = document.querySelector('#viewer-section');
 let previewContainer = document.querySelector('#holder');
 
 // const sprockets = '<svg height="30" width="30"><circle cx="20" cy="20" r="10" fill="white" /></svg>';
-const sprockets = '<img src="../public/images/sprocket-hole-2.svg" height="30" width="30">';
+const sprockets = '<img src="images/sprocket-hole-2.svg" height="30" width="30">';
 const sprocketSection = `<div class="sprocket-section">${sprockets.repeat(19)}</div>`; 
 const empty = `<div id="empty"></div>`;
 //make else for empty or image

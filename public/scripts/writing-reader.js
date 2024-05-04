@@ -1,4 +1,4 @@
-fetch("../text/stories/vanille.rtf")
+fetch("text/stories/vanille.rtf")
   .then((res) => res.text())
   .then((text) => {
     console.log(text);

@@ -10,6 +10,7 @@
 }
 body {
     background-color:hsl(307, 29%, 8%);
+    color: white;
 }
 button {
     border-radius: 0%;
@@ -17,10 +18,14 @@ button {
 }
 a {
     text-decoration: none;
+    color: white;
     /* background-color: hsl(307, 29%, 8%); */
 }
+a:visited{
+    color: white;
+}
 footer {
-    border-top: 3px hsl(51, 100%, 30%) double;
+    border-top: 3px double hsl(51, 100%, 30%);
     padding-top: 5px;
     text-align: right;
 }
