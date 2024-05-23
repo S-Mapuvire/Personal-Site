@@ -1,12 +1,20 @@
 body {
     color: var(--faded-glory);
 }
-
+/* ----------------------------------------------------------- */
+header, footer {
+    --header-background: hsl(51, 100%, 5%);
+    --header-colour: hsl(51, 40%, 80%);
+    background-color: var(--header-background);
+    color: var(--header-colour);
+}
+/* ----------------------------------------------------------- */
 nav{
     border-bottom: 3px hsl(51, 100%, 30%) double;
-    padding-top: 5px;
+    padding: 5px 0;
     text-align: right;
 }
+/* ----------------------------------------------------------- */
 a {
     font-size: 18pt;
 }
@@ -17,8 +25,8 @@ a:visited{
 a:hover{
     text-shadow: 1px 1px 7px white;
     color: rgb(200, 200, 200, 40);
-    font-size: 
 }
+/* ----------------------------------------------------------- */
 ul {
     display: grid;
     justify-items: end;
@@ -26,9 +34,7 @@ ul {
     
     margin: 0 10px 0 10px;
 }
-li{
-}
-
+/* ----------------------------------------------------------- */
 h1{
     font-size: 40pt;
     text-align: center;
@@ -46,6 +52,7 @@ h3{
     position: relative;
     top: -50px;
 }
+/* ----------------------------------------------------------- */
 .food-cat{
     padding: 15px;
     margin: 5px;
@@ -70,6 +77,41 @@ img{
     width: 100%;
     max-height: 100%;
 }
+/* ----------------------------------------------------------- */
+footer{
+    padding: 5px 5px 0 0;
+}
+#footer-link-area{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    padding: 5px 0;
+    margin-right: 60px;
+}
+#footer-header{
+    font-weight: bold;
+}
+#footer-links{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 25% 35%;
+}
+.footer-link:hover{
+    text-shadow: 1px 1px 30px rgba(255, 255, 255, 1);
+    font-weight: 800;
+}
+.footer-link::after{
+    content: " -> ";
+}
+hr{
+    border: none;
+    border-top: 1px solid hsl(51, 100%, 30%);
+    margin: 10px 0;
+}
+.footer-label{
+    padding: 5px 5px 5px 0;
+}
+/* ----------------------------------------------------------- */
 @media screen and (max-width: 960px) {
     a {
         font-size: 14pt;

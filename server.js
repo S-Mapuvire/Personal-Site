@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //home page
-app.get( '/', (req, res) => {
+app.get( '^/$|/index(.html)?', (req, res) => {
     res.sendFile(path.join(__dirname,'views', 'index.html'));
     console.log(`Recieved request ${req.url}, ${req.method}`);
 });

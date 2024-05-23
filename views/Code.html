@@ -1,70 +1,115 @@
 <!DOCTYPE html>
-<aside lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/base-style.css">
     <link rel="stylesheet" href="styles/code-examples-style.css">
-    <title>Code</title>
+    <title>Code Examples</title>
 </head>
 <body>
-    <h2>C++</h2>
-    <pre><code></code></pre>
-
-    <h2>Python</h2>
-    <pre><code></code></pre>
-
-    <h3>PyQT</h3>
-
-    <div class="code-box">
+    <header>
         <details>
-            <summary>Example</summary>
-            <pre><code id="pyqt"></code></pre>
+            <nav>
+                <ul>
+                    <a href="index.html" class="nav-link"><li>Home</li></a>
+                    <a href="Code.html" class="nav-link"><li>Code</li></a>
+                    <a href="Cooking.html" class="nav-link"><li>Cooking Photos</li></a>
+                    <a href="Drawing.html" class="nav-link"><li>Drawings</li></a>
+                    <a href="Photos.html" class="nav-link"><li>Photos</li></a>
+                    <a href="Writing.html" class="nav-link"><li>Writing</li></a>
+                </ul>
+            </nav>
+            <summary><h1>Links to Other Pages</h1></summary>
         </details>
-    </div>
-    
+        
+    </header>
+    <main>
+        <div id="title">
+            <h2>Just a small sampling of coding languages known.</h2>
+            <h2>Though there's a link to Github at the bottom.</h2>
+        </div>
+        <input id="selector" type="text" placeholder="Type Language Section" oninput="selected()">
 
-    
-    <h3>BeautifulSoup</h3>
-    <pre><code></code></pre>
-    <h3>PyWin (Win64 API)</h3>
-    <pre><code></code></pre>
-
-    <h2>HTML</h2>
-    <pre><code></code></pre>
-
-    <h2>CSS</h2>
-    <pre><code></code></pre>
-
-    <h2>JavaScript</h2>
-    <pre><code></code></pre>
-    <h3>Vue</h3>
-    <pre><code></code></pre>
-    <h3>P5.js</h3>
-    <pre><code></code></pre>
-
-    <h2>Lua</h2>
-    <pre><code></code></pre>
-
-    <h2>SQL</h2>
-    <pre><code></code></pre>
-
-    <h2>Data structures</h2>
-    <pre><code></code></pre>
-    <h3>Trees</h3>
-    <pre><code></code></pre>
-    <h4>Red-Black Trees</h4>
-    <pre><code></code></pre>
-    <h3>State Machines</h3>
-    <pre><code></code></pre>
-    <h3>Linked List</h3>
-    <pre><code></code></pre>
-    <h3>Heap</h3>
-    <pre><code></code></pre>
-
-    <h2>Rainmeter</h2>
-    <pre><code></code></pre>
+        <!-- 
+        <div id="code-samples">
+            <div class="code-box">
+                <details>
+                    <h3  class="subsection-header">To be added</h3>
+                    <summary><h2>C++</h2></summary>
+                    <pre><code id=""></code></pre>
+                </details>
+            </div>
+            <div class="code-box">
+                <details>
+                    <h3 class="subsection-header">PyQT</h3>
+                    
+                    <details>
+                        <img src="images/programs/Folder Maker Screenshot.png" alt="">
+                        <summary><h4>Folder Maker Screenshot</h4></summary>
+                    </details>
+                    
+                    <h3 class="subsection-header">BeautifulSoup</h3>
+                    <pre><code></code></pre>
+                    <h3 class="subsection-header">PyWin (Win64 API)</h3>
+                    <pre><code></code></pre>
+                    <summary><h2>Python</h2></summary>
+                    <pre><code id=""></code></pre>
+                </details>
+            </div>
+            <div class="code-box">
+                <details>
+                    <h3 class="subsection-header">React, Svelte, Vue, P5, JS, HTML, CSS, SASS, Bootstrap, TailWind  </h3>
+                    <summary><h2>Front-End Web Dev</h2></summary>
+                    <pre><code id=""></code></pre>
+                </details>
+            </div>
+            <div class="code-box">
+                <details>
+                    <h3 class="subsection-header">SQL, MongoDB, AWS</h3>
+                    <summary><h2>Back-End Web Dev</h2></summary>
+                    <pre><code id=""></code></pre>
+                </details>
+            </div>
+            <div class="code-box">
+                <details>
+                    <h3 class="subsection-header">To be added</h3>
+                    <summary><h2>Rainmeter</h2></summary>
+                    <pre><code id=""></code></pre>
+                </details>
+            </div>
+            <div class="code-box">
+                <details>
+                    <h3 class="subsection-header">To be added</h3>
+                    <summary><h2>Lua</h2></summary>
+                    <pre><code id=""></code></pre>
+                </details>
+            </div>
+            <div class="code-box">
+                <details>
+                    <h3 class="subsection-header">Trees - Red-Black Trees, State Machines, Linked List, Heaps</h3>
+                    <summary><h2>Data Structures</h2></summary>
+                    <pre><code id=""></code></pre>
+                </details>
+            </div>
+        </div> -->
+    </main>
+    <footer>
+        <div id="footer-link-area">
+          <p id="footer-header">My Other Accounts</p>
+          <ul id="footer-links">    
+            <li><a href="" class="footer-link">Flickr</a></li>
+            <li><a href="" class="footer-link">Github</a></li>
+            <li><a href="" class="footer-link">WordPress</a></li>
+            <li><a href="" class="footer-link">Email Address</a></li>
+          </ul>
+        </div>
+        <hr>
+  
+        <p class="footer-label"> &copy; S.Mapuvire 2024 </p>
+        <p class="footer-label"> This page was made with Vue.js, SASS, and some Vanilla JS DOM Manipulation </p>
+      </footer>
 
     <script src="scripts/code-examples.js"></script>
 

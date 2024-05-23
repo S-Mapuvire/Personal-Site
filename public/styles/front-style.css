@@ -3,43 +3,57 @@
     --shadow-size: 12px;
     --negative-shadow-size: -12px;
     --shadow-glow-radius: 20px;
+
+    --header-colour: hsl(51, 40%, 80%);
+    --header-background: hsl(51, 100%, 5%);
+
+    cursor: none;
 }
-* {
-    /* the cursor will be a circle made w/ p5 */
-    /* cursor: none;  */
+/* ----------------------------------------------------------- */
+header, footer {
+    cursor: default;
+    background-color: var(--header-background);
+    color: var(--header-colour);
 }
+
+header{
+    text-align: end;
+    padding: 5px;
+    border-bottom: 2px solid var(--header-colour);
+}
+/* ----------------------------------------------------------- */
+main {
+    height: 50vh;
+}
+/* ----------------------------------------------------------- */
 canvas {
-    /* the canvas is the background to all */
     position: absolute;
+    top: -1px;
     z-index: -1;
-    outline: 1px solid red;
 }
-nav {
-    position: absolute;
-    height: 26px;
-    width: 100vw;
-    margin-top: 10px;
-    border-bottom: 3px hsl(51, 100%, 30%) double;
-}
-#links-container{
-    outline: 1px solid darkgrey;
+/* ----------------------------------------------------------- */
 .link-box{
-    width: 150px;
-    padding: 20px;
-    align-content: center;
-    font-size: 16px;
-    background-color: rgba(0, 100, 0, 0);
     border: 1px solid white;
+
+    width: 100px;
+    height: 50px;
 }
-.link-box a{
-    padding: 20px;
+.link{
+    cursor: none;
+
+    display: block;
+    align-content: center;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
 }
-.link-box a:hover{
+.link:hover{
+    border: 1px solid hsl(51, 100%, 50%);
+
     background-color: rgba(255, 217, 0, 0.1);
+
     text-shadow: 1px 1px 10px white;
-
-    outline: 2px solid hsl(51, 100%, 50%);
-
     box-shadow: 
     var(--shadow-size) var(--shadow-size) var(--shadow-glow-radius) var(--shadow-colour), 
     var(--shadow-size) 0 var(--shadow-glow-radius) var(--shadow-colour), 
@@ -49,45 +63,67 @@ nav {
     var(--negative-shadow-size) 0 var(--shadow-glow-radius) var(--shadow-colour), 
     var(--shadow-size) var(--negative-shadow-size) var(--shadow-glow-radius) var(--shadow-colour), 
     var(--negative-shadow-size) var(--shadow-size) var(--shadow-glow-radius) var(--shadow-colour);
+
+    /* box-shadow: var(--negative-shadow-size) var(--shadow-size) var(--shadow-colour); */
+
     transition: 0.4s;
 }
-
-/* Grid Boxes */
-#code{
-    /* margin-top: 100px; */
+/* ----------------------------------------------------------- */
+#photos {
+    position: relative;
+    left: 20%;
+    top: 40px;
 }
-#code:hover{
-    /* margin-top: 20px; */
-    /* box-shadow: var(--negative-shadow-size) var(--shadow-size) var(--shadow-colour); */
+#code{
+    position: relative;
+    left: 80%
 }
 #cooking{
-    /* margin-top: -40px; */
-    /* margin-left: -20px;  */
-}
-#cooking:hover{
-    /* margin-top: -10px; */
-    /* box-shadow: var(--shadow-size) var(--negative-shadow-size) var(--shadow-colour); */
+    position: relative;
+    left: 50%;
+    top: 100px; 
 }
 #drawing {
-    /* margin-top: 160px; */
-}
-#drawing:hover{
-    /* margin-top: 10px; */
-    /* box-shadow: var(--shadow-size) var(--shadow-size) var(--shadow-colour); */
-}
-#photos {
-    /* margin-top: 30px; */
-    /* margin-right: -20px; */
-}
-#photos:hover{
-    /* margin-top: 20px; */
-    /* box-shadow: var(--negative-shadow-size) var(--shadow-size) var(--shadow-colour); */
+    position: relative;
+    left: 20%;
+    top: 200px; 
 }
 #writing {
-    /* margin-top: -20px; */
+    position: relative;
+    left: 80%;
+    top: 200px;
 }
-#writing:hover{
-    /* margin-top: -10px; */
-    /* box-shadow: var(--shadow-size) var(--negative-shadow-size) var(--shadow-colour); */
+/* ----------------------------------------------------------- */
+footer{
+    padding: 5px 5px 0 0;
 }
-
+#footer-link-area{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    padding: 5px 0;
+    margin-right: 60px;
+}
+#footer-header{
+    font-weight: bold;
+}
+#footer-links{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 25% 30%;
+}
+.footer-link:hover{
+    text-shadow: 1px 1px 30px rgba(255, 255, 255, 1);
+    font-weight: 800;
+}
+.footer-link::after{
+    content: " -> ";
+}
+hr{
+    border: none;
+    border-top: 1px solid hsl(51, 100%, 30%);
+    margin: 10px 0;
+}
+.footer-label{
+    padding: 5px 5px 5px 0;
+}
