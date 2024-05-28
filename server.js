@@ -36,6 +36,11 @@ app.get('/Photos(.html)?', (req, res) => {
     res.sendFile(path.join(__dirname,'views', 'Photos.html'));
 })
 
+app.get('/Resume(.html)?', (req, res) => {
+    console.log(`Recieved request ${req.url}, ${req.method}`);
+    res.sendFile(path.join(__dirname,'views', 'Resume.html'));
+})
+
 app.get('/Writing(.html)?', (req, res) => {
     console.log(`Recieved request ${req.url}, ${req.method}`);
     res.sendFile(path.join(__dirname,'views', 'Writing.html'));

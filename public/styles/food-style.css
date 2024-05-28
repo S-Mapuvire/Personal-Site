@@ -1,3 +1,4 @@
+/* TO-DO - make responsive, figure out why image hover is so slow, change it so when recipebox is up both the body and footer are black, make buttons look nice using that button file for inspo */
 body {
     color: var(--faded-glory);
 }
@@ -10,9 +11,8 @@ header, footer {
 }
 /* ----------------------------------------------------------- */
 nav{
-    border-bottom: 3px hsl(51, 100%, 30%) double;
     padding: 5px 0;
-    text-align: right;
+    border-bottom: 3px hsl(51, 100%, 30%) double;
 }
 /* ----------------------------------------------------------- */
 a {
@@ -20,42 +20,126 @@ a {
 }
 a:visited{
     color: var(--faded-glory);
-    
 }
 a:hover{
-    text-shadow: 1px 1px 7px white;
     color: rgb(200, 200, 200, 40);
+    text-shadow: 1px 1px 7px white;
 }
 /* ----------------------------------------------------------- */
 ul {
     display: grid;
-    justify-items: end;
-    grid-template-columns: repeat(6, 1fr);
-    
+    grid-template-columns: repeat(5, 1fr);
     margin: 0 10px 0 10px;
 }
 /* ----------------------------------------------------------- */
-h1{
+h1 {
     font-size: 40pt;
     text-align: center;
     margin: 20px;
 }
-h2{
+h2 {
     font-size: 30pt;
+}
+h3 {
+    font-size: 20pt;
+}
+/* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+#recipebox{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    height: 100vh;
+    grid-template-rows: 1fr 8fr;
+
+    background-color: black;
+}
+.recipebox-button{
+    width: 40px;
+    height: 40px;
+    justify-self: end;
+
+    border: 1px hsl(51, 100%, 30%) solid;
+    color: hsl(51, 100%, 30%);
+    background-color: #0000
+}
+.recipebox-button:hover{
+    box-shadow: 1px 1px 10px white;
+}
+#recipebox-prev, #recipebox-next{
+    align-self: center;
+}
+#recipebox-prev {
+    justify-self:right;
+}
+#recipebox-next{
+    justify-self:left;
+}
+#recipe-next-prev{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+}
+#recipe-title-image{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 2fr;
+
+    border: 4px lightblue double;
+    height: 100%;
+    
+    color: var(--faded-glory);
+}
+#recipe-img{
+    padding: 5px;
+    border: 1px solid red;
+}
+#recipe-words{
+    padding: 5px;
+    border: 1px solid red;
+}
+/* ----------------------------------------------------------- */
+#explainer{
+    margin: 10px 5px;
+    padding: 5px 20px;
+    font-weight: 600;
+
+    border: 3px var(--faded-glory) double;
+}
+#explainer-header{
+    margin: 5px 0 10px -10px;
+}
+#explainer p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#explainer p:nth-of-type(4), p:nth-of-type(12){
+    margin-left: 40px;
+}
+#explainer p:nth-of-type(5){
+    margin-left: 100px;
+}
+#explainer p:nth-of-type(6), p:nth-of-type(7), p:nth-of-type(8), p:nth-of-type(9){
+    margin-left: 150px;
+}
+#explainer p:nth-of-type(10), p:nth-of-type(13){
+    margin: 10px 0 10px 250px;
+    color: hsl(195, 53%, 79%);
+}
+/* ----------------------------------------------------------- */
+.cat-header{
     margin: 5px;
 }
-h3{
-    font-size: 20pt;
-    margin: 5px;
-    
-    transform: rotate(-8deg);
+.subcat-header{
     position: relative;
     top: -50px;
+    transform: rotate(-8deg);
+    margin: 5px;
 }
 /* ----------------------------------------------------------- */
 .food-cat{
-    padding: 15px;
     margin: 5px;
+    padding: 15px;
     border: 4px var(--faded-glory) double;
 }
 .food-type{
@@ -63,20 +147,31 @@ h3{
     outline: 1px darkcyan solid;
 }
 .carousel{
-    margin: 10px;
-    outline: 1px solid pink;
     display: flex;
-    justify-content: space-between;
+    margin: 10px;
+    justify-content: space-between;   
     
+    outline: 1px solid pink;
 }
 .image-holder{
-    outline: 1px solid green;
     width: 10%;
+    
+    outline: 1px solid green;
+
+    transition: 1s;
+}
+.image-holder:hover{
+    width: 70%;
+    
+    outline: none;
+    
+    cursor: pointer;
 }
 img{
     width: 100%;
     max-height: 100%;
 }
+
 /* ----------------------------------------------------------- */
 footer{
     padding: 5px 5px 0 0;
@@ -84,7 +179,6 @@ footer{
 #footer-link-area{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    
     padding: 5px 0;
     margin-right: 60px;
 }

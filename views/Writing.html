@@ -1,30 +1,96 @@
+<!-- TO-DO
+- incorporate vue
+- add nice section comments
+- figure out how to add more links besides just home i.e. more photos and make them thematically linked to the page -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/base-style.css">
-    <link rel="stylesheet" href="styles/writing-style.css">
-    <title>Writings</title>
-</head>
-<body>
-    <div id="first-half">
-        <div id="left-side">
-            <div id="pic-holder"> 
-                <img id="pic" src="images/photos/light over the land (4).jpg" alt="" srcset="">
-                <a href="#second-half">
-                    <div id="cover">
-                        <div id="label">Click here for stories</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/base-style.css">
+        <link rel="stylesheet" href="styles/writing-style.css">
+        <title>Writings</title>
+    </head>
+
+    <body>
+
+        <header id="first-half">
+            <div id="left-side">
+                <div id="img-links">
+                    <div class="pic-holder"> 
+                        <img class="pic" src="images/icons/light over the land (4).jpg" alt="" srcset="">
+                        <a class="label-set" href="#second-half">
+                            <div class="cover">
+                                <div class="label">Click here for stories and such</div>
+                            </div>
+                            <div class="label2">Light Over the Land &copy; S.Mapuvire</div>
+                        </a>
                     </div>
-                </a>
+                    <div class="pic-holder"> 
+                        <img class="pic" src="images/icons/watch the limit (2).jpg" alt="" srcset="">
+                        <a class="label-set" href="index.html">
+                            <div class="cover">
+                                <div class="label">Click here for the homepage</div>
+                            </div>
+                            <div class="label2">Watch the Limit &copy; S.Mapuvire</div>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="right-side">this page is a collection, a display, a wall, a selection of text indicated to show that the purpose of this subsection of the larger section is dedicated to words, not 'good' words or 'the best' words but words that display and portray the weirdnesses and boringnesses that cross my mindstream from time to time to time to time</div>
-    </div>
-    <div id="second-half">
-        <pre></pre>
-    </div>
-    <script src="scripts/writing-reader.js"></script>
-</body>
+            <div id="right-side">this page is a collection, a display, a wall, a selection of text indicated to show that the purpose of this subsection of the larger section is dedicated to words, not 'good' words or 'the best' words but words that display and portray the weirdnesses and boringnesses that cross my mindstream from time to time to time to time</div>
+        </header>
+        
+        <main id="second-half">
+            <nav>
+                <ul>
+                    <li>
+                        <details>
+                            <li><a href="#dollmaker">Doll-Makers</a></li>
+                            <li><a href="#kora">KORA</a></li>
+                            <li><a href="#incorporated">Incorporated</a></li>
+                            <li><a href="#lightningshort">Lightning Short</a></li>
+                            <li><a href="#lotustemple">Lotus Temple</a></li>
+                            <summary><h2 class="nav-link">Works</h2></summary>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <li>To be inserted</li>
+                            <li>To be inserted</li>
+                            <li>To be inserted</li>
+                            <li>To be inserted</li>
+                            <li>To be inserted</li>
+                            <summary><h2 class="nav-link">Blog Postings</h2></summary>
+                        </details>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="works">
+                <article id="dollmakers">
+                    <h3>Doll-Makers</h3>
+                </article>
+                <article id="kora">
+                    <h3>KORA</h3>
+                </article>
+                <article id="incorporated">
+                    <h3>Incorporated</h3>
+                </article>
+                <article id="lightningshort">
+                    <h3>Lightning Short</h3>
+                </article>
+                <article id="lotustemple">
+                    <h3>Lotus Temple</h3>
+                </article>
+            </section>
+            
+            <section id="Blog Postings"></section>
+            <footer></footer>
+
+        </main>
+        
+        <script src="scripts/writing-reader.js" type="module"></script>
+        <script src="scripts/footer.js"></script>
+    </body>
 </html>

@@ -1,3 +1,5 @@
+// TO-DO - make into a component?
+
 const imageList = ["1 isle in mist - far (1).jpg", "20230612_164537.jpg", "=maybe crop？.jpg", "Arrow of Light.jpg", "Blue Candidate.jpg", "Coldplay Day - Behind the Shed (4).jpg","Diurnal Fall (3).jpg", "early morning fence (3).jpg", "Gate to the World.jpg", "In the Shadow.jpg", "Into the painting.jpg", "light over the land (4).jpg", "macro shot 2.jpg", "misty morning (4).jpg", "Puddle.jpg", "red eye over yonder (2).jpg", "silver light morning (10).jpg", "smoky grass fire - panorama - far shot - edit.jpg", "smoky grass fire - panorama - near shot - edit.jpg", "spectral path (1).jpg", "This Exit's Taken.jpg", "towers-2.jpg", "watch the limit (2).jpg"];
 
 const imageFolder = "images/photos/";

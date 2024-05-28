@@ -1,8 +1,9 @@
-let input = document.querySelector('input');
+let input = document.getElementById('selector')
 function selected(){
-    input.style.backgroundColor = 'red';
 }
 function selectorDefault(){
-    input
+    input.style.backgroundColor == 'red'? input.style.backgroundColor = 'green' : input.style.backgroundColor = 'red';
 
 }
+
+selectorDefault();

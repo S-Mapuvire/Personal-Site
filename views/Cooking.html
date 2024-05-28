@@ -1,7 +1,12 @@
 <!-- 
   TO DO
 
-  Cooking - implement recipe lightbox: pic and recipe with arrow navigation
+  - implement recipe recipebox: pic and recipe with arrow navigation
+  - maybe add a toggle to the intro that remembers if it was closed?
+  - implement vue - add v-on and a loading bar/swirly and a list of loaded elements
+  - make page loading faster
+  - add nice section comments
+  - maybe make the recipebox a vue component?
  -->
 
 <!DOCTYPE html>
@@ -15,6 +20,21 @@
     <title>Cooking</title>
 </head>
 <body>
+    <div id="recipebox">
+        <button class="recipebox-button" id="recipebox-close" onclick="closeRecipe()">X</button>
+        <div id="recipe-next-prev">
+            <button class="recipebox-button" id="recipebox-prev">&lt;-</button>
+            <article id="recipe-title-image">
+                <img loading="lazy" id="recipe-image">
+                <section id="recipe-words">
+                    <h2 id="recipe-title"></h2>
+                    <p id="recipe-content"></p>
+                </section>
+            </article>
+            <button class="recipebox-button" id="recipebox-next">-&gt;</button>
+        </div>
+    </div>
+
     <header>
         <nav id="links-section">
             <ul id="links">
@@ -27,38 +47,54 @@
         </nav>
     </header>
     <main>
-        <h1>This Page is All About Cooking!</h1>
+        <h1>This Page is All About Food!</h1>
+        <section id="explainer">
+            <h2 id="explainer-header">Intro!</h2>
+            <p>I mean, uh, right now, there's only some photos of stuff I've made...</p>
+            <p>But, hey, click on 'em! And you'll get the associated recipes that are totally not mine!</p>
+            <p>And,</p>
+            <p>one day, </p>
+            <p>hopefully,</p>
+            <p>I'll add food facts and articles...</p>
+            <p>Techinques...</p>
+            <p>More photos...</p>
+            <p>More recipes - maybe even original ones!</p>
+            <p>You know, make this into it's own thing! </p>
+            <p>But for now...</p>
+            <p>I guess...</p>
+            <p>Please see this as an amuse-bouche for what is to come!</p>
+        </section>
 
         <article class="food-cat" id="bread">
-            <h2>Here's About Bread!</h2>
+            <h2 class="cat-header">Here's About Bread!</h2>
 
             <article class="food-type" id="bao">
-                <h3>Bao Buns</h3>
+                <h3 class="subcat-header">Bao Buns</h3>
                 <div class="carousel">
-                    <div class="image-holder"><img src="images/food/bao bun - attempt 1 -after-2.jpg"></div>
-                    <div class="image-holder"><img src="images/food/bao bun - attempt 2 - after-2.jpg"></div>
-                    <div class="image-holder"><img src="images/food/bao bun - attempt 2 - batch 2 - after-4-2.jpg"></div>
-                    <div class="image-holder"><img src="images/food/bao bun - attempt 2 - cutaway-4.jpg"></div>
+                    <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:BaoBuns" src="images/food/bao bun - attempt 1 -after-2.jpg"></div>
+                    <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:BaoBuns" src="images/food/bao bun - attempt 2 - after-2.jpg"></div>
+                    <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:BaoBuns" src="images/food/bao bun - attempt 2 - batch 2 - after-4-2.jpg"></div>
+                    <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:BaoBuns" src="images/food/bao bun - attempt 2 - cutaway-4.jpg"></div>
                 </div>
                 
             </article>
 
             <article class="food-type" id="flatbread">
-                <h3>Flatbread</h3>
+                <h3 class="subcat-header">Flatbread</h3>
                 <div class="carousel">
-                    <div class="image-holder"><img src="images/food/First Flatbread - Finished w Beans - 1.jpg"></div>
+                    <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:Flatbread" src="images/food/First Flatbread - Finished w Beans - 1.jpg"></div>
                 </div>
                 
             </article>
             
             <article class="food-type" id="whitebread">
-                <h3>White bread</h3>
+                <h3 class="subcat-header">White bread</h3>
                 <div class="carousel">
-                    <div class="image-holder"><img src="images/food/First Bread - Finished - 3.jpg"></div>
-                    <div class="image-holder"><img src="images/food/First Bread - Finished - 7.jpg"></div>
-                    <div class="image-holder"><img src="images/food/First Bread - Sandwich - 2.jpg"></div>
-                    <div class="image-holder"><img src="images/food/First Bread - Sandwich - 4.jpg"></div>
-                    <div class="image-holder"><img src="images/food/moody bread.jpg"></div>
+                    <div class="image-holder"><img loading="lazy" class="Recipe:WhiteBread" src="images/food/First Bread - Finished - 3.jpg"></div>
+                    <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:WhiteBread" src="images/food/First Bread - Finished - 7.jpg"></div>
+                    <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:WhiteBread" src="images/food/First Bread - Sandwich - 2.jpg"></div>
+                    <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:WhiteBread" src="images/food/First Bread - Sandwich - 4.jpg"></div>
+                    <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:Butter" src="images/food/moody bread.jpg"></div>
                 </div>
                 
             </article>
@@ -66,42 +102,29 @@
         </article>
         
         <article class="food-cat" id="pizza">
-            <h2>Pizza, I guess...</h2>
+            <h2 class="cat-header">Pizza, I guess...</h2>
             <div class="carousel">
-                <div class="image-holder"><img src="images/food/First Pizza - 1 - Dough.jpg"></div>
-                <div class="image-holder"><img src="images/food/Second Pizza - Finished - 1.jpg"></div>
+                <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:Pizza" src="images/food/First Pizza - 1 - Dough.jpg"></div>
+                <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:Pizza" src="images/food/Second Pizza - Finished - 1.jpg"></div>
             </div>
            
         </article>
     
         <article class="food-cat" id="cookies">
-            <h2>Of Cookies and Somesuch</h2>   
+            <h2 class="cat-header">Of Cookies and Somesuch</h2>   
             <div class="carousel">
-                <div class="image-holder"><img src="images/food/First attempt at Mini Milk Tarts.jpg"></div>
-                <div class="image-holder"><img src="images/food/Sand tart, peanut butter cookies and glassy (high sugar, low flour) scones.jpg"></div>
+                <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:Cookies" src="images/food/First attempt at Mini Milk Tarts.jpg"></div>
+                <div class="image-holder" onclick="openRecipe(this)"><img loading="lazy" class="Recipe:Cookies" src="images/food/Sand tart, peanut butter cookies and glassy (high sugar, low flour) scones.jpg"></div>
             </div>
         </article>    
     
     </main>
-    <footer>
-        <div id="footer-link-area">
-          <p id="footer-header">My Other Accounts</p>
-          <ul id="footer-links">    
-            <li><a href="" class="footer-link">Flickr</a></li>
-            <li><a href="" class="footer-link">Github</a></li>
-            <li><a href="" class="footer-link">WordPress</a></li>
-            <li><a href="" class="footer-link">Email Address</a></li>
-          </ul>
-        </div>
-        <hr>
-  
-        <p class="footer-label"> &copy; S.Mapuvire 2024 </p>
-        <p class="footer-label"> This page was made with Vue.js, SASS, and some Vanilla JS </p>
-      </footer>
     
-   
-    
+    <footer></footer>
 
+    <script src="scripts/food-viewer.js"></script>
+    <script src="scripts/food-recipes.js"></script>
+    <script src="scripts/footer.js"></script>
     
 </body>
 </html>

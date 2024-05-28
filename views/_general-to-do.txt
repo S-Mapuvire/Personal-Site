@@ -1,0 +1,7 @@
+1) organise folder for a front and backend
+2) change onrender url
+3) git commit all the new stuff
+4) try first just using a cdn and see how fast that is then see how slow making requests is?
+5) make custom icons
+6) make image names more descriptive
+7) 

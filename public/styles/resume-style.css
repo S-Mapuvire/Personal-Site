@@ -1,0 +1,55 @@
+:root{
+    font-size: 7pt;
+}
+body{
+    color: hsl(51, 20%, 70%);
+    font-size: 2rem;
+}
+h1{
+    font-size: 5rem;
+    margin-bottom: 5px;
+}
+header hr{
+    border: none;
+    border-top: 4px double hsl(51, 30%, 70%);
+}
+h2{
+    font-size: 4rem;
+    margin: 10px 5px;
+}
+h3{
+    font-size: 3rem;
+    margin: 5px 10px;
+}
+main{
+    margin-top: 10px;
+}
+section{
+    border: 4px double rgb(143, 131, 27);
+    border-radius: 0 10px 0 10px;
+    padding: 5px;
+    margin: 10px 0;
+}
+section p{
+    margin: 5px 15px;
+}
+ul{
+    display: grid;
+    margin-left: 10px;
+}
+li::before{
+    content: "-> ";
+    
+}
+#please-see{
+    text-align: center;
+    margin: 20px 0;
+}
+a:hover{
+    text-shadow: 1px 1px 5px white;
+}
+#footer-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}

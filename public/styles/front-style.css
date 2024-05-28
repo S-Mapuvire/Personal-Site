@@ -94,36 +94,3 @@ canvas {
     top: 200px;
 }
 /* ----------------------------------------------------------- */
-footer{
-    padding: 5px 5px 0 0;
-}
-#footer-link-area{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    
-    padding: 5px 0;
-    margin-right: 60px;
-}
-#footer-header{
-    font-weight: bold;
-}
-#footer-links{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 20% 20% 25% 30%;
-}
-.footer-link:hover{
-    text-shadow: 1px 1px 30px rgba(255, 255, 255, 1);
-    font-weight: 800;
-}
-.footer-link::after{
-    content: " -> ";
-}
-hr{
-    border: none;
-    border-top: 1px solid hsl(51, 100%, 30%);
-    margin: 10px 0;
-}
-.footer-label{
-    padding: 5px 5px 5px 0;
-}

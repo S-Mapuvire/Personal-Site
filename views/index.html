@@ -1,10 +1,11 @@
 <!-- 
   TO DO
 
-  All pages - use vue to add a standard footer, 
-  make responsive and accessible for phone and desktop
-  
-  Front - make canvas dynamically sized
+  - implement some neat canvas thing for the front page, or even a rolling set of canvas displays
+  - make responsive and accessible for phone and desktop
+  - make canvas dynamically sized
+  - maybe add pages for resume, liked reading and games made?
+
 
 -->
 
@@ -21,7 +22,7 @@
   
   <body>
     <header>
-      <h1>Welcome to the Personal Site!</h1>
+      <h1>Welcome to the Personal Site of S.Mapuvire!</h1>
     </header>
     
     <main>
@@ -38,23 +39,18 @@
       </div>
     </main>
 
-    <footer>
-      <div id="footer-link-area">
-        <p id="footer-header">My Other Accounts</p>
-        <ul id="footer-links">    
-          <li><a href="" class="footer-link">Flickr</a></li>
-          <li><a href="" class="footer-link">Github</a></li>
-          <li><a href="" class="footer-link">WordPress</a></li>
-          <li><a href="" class="footer-link">Email Address</a></li>
-        </ul>
-      </div>
-      <hr>
+    <footer></footer>
 
-      <p class="footer-label"> &copy; S.Mapuvire 2024 </p>
-      <p class="footer-label"> This page was made with Vue.js, p5.js, SASS, and some Vanilla JS </p>
-    </footer>
+    <div id="app">
+      {{test}}
+    </div>
 
     <script src="scripts/p5.js"></script>
     <script src="scripts/sketch.js"></script>
+
+    <script src="scripts/footer.js"></script>
+
+    <!-- <script src="https://unpkg.com/vue@3"></script> -->
+    <!-- <script src="scripts/app.js" type="module"></script> -->
   </body>
 </html>

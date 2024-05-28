@@ -9,7 +9,6 @@ header{
     text-align: end;
     padding: 5px;
     border-bottom: 2px solid var(--header-colour);
-
 }
 /* ----------------------------------------------------------- */
 main{
@@ -25,26 +24,13 @@ h2{
 #selector{
     height: 50px;
     width: 300px;
+    margin-top: 10px;
     text-align: center;
     background-color: #0000;
-    border: 1px solid silver;
+    border: none;
 }
-.code-box {
-    display: flex;
-    border: 1px silver solid;
-    margin: 5px;
-}
-details{
-    padding: 10px;
-}
-summary{
-    padding: 5px;
-}
-summary::before{
-    display: inline;
-}
-.subsection-header{
-    padding-left: 10px;
+input:before{
+    content: " -> ";
 }
 /* ----------------------------------------------------------- */
 footer{

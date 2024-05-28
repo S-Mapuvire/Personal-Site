@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg12882"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="image_not_found.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12884"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.76880612"
+     inkscape:cx="286.80833"
+     inkscape:cy="560.60948"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs12879">
+    <rect
+       x="79.343802"
+       y="267.94792"
+       width="624.34467"
+       height="565.81236"
+       id="rect13163" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#666666;fill-opacity:0.740506;fill-rule:evenodd;stroke-width:0.4;paint-order:markers stroke fill"
+       id="rect13107"
+       width="182.39861"
+       height="182.39861"
+       x="13.421784"
+       y="51.62225" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text13161"
+       style="font-size:133.333px;font-family:inter;-inkscape-font-specification:inter;text-align:center;white-space:pre;shape-inside:url(#rect13163);fill:#666666;fill-opacity:0.740506;fill-rule:evenodd;stroke-width:1.51181;paint-order:markers stroke fill"><tspan
+         x="188.19583"
+         y="391.34288"
+         id="tspan13692"><tspan
+           style="font-family:'Malgun Gothic';-inkscape-font-specification:'Malgun Gothic, Normal';fill:#050000"
+           id="tspan13690">IMAGE </tspan></tspan><tspan
+         x="256.58758"
+         y="558.09776"
+         id="tspan13696"><tspan
+           style="font-family:'Malgun Gothic';-inkscape-font-specification:'Malgun Gothic, Normal';fill:#050000"
+           id="tspan13694">NOT </tspan></tspan><tspan
+         x="161.04746"
+         y="724.85265"
+         id="tspan13700"><tspan
+           style="font-family:'Malgun Gothic';-inkscape-font-specification:'Malgun Gothic, Normal';fill:#050000"
+           id="tspan13698">FOUND</tspan></tspan></text>
+  </g>
+</svg>

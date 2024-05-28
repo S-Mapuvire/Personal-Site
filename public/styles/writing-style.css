@@ -1,52 +1,108 @@
+/* TO-DO
+- style the page like an abstract bulletin/mood board (like how the photos page is a stylised film reel) with a sort of magazine spread/photo board section then a section for sticking up stories and blog postings */
 #first-half{
     display: grid;
     grid-template-columns: 50% 50%;
+    border-bottom: 2px solid white;
 }
 #left-side{
-    background-color: pink;
+    background-color: #23350b;
 }
-#pic-holder{
-    margin: 20px 0 0 20px;
-    outline: 2px pink solid;
+#img-links{
+    position: sticky;
+    top: -1px;
+    margin: 20px 0 100px 20px;
+}
+.pic-holder{
+    outline: 3px goldenrod solid;
+    outline-offset: 10px;
+
     transform: rotate(25deg);
     transition: 1s;
 }
-#pic-holder:hover {
-    transform: rotate(1deg);
+.pic-holder:nth-of-type(2){
+    margin-top: 100px;
 }
-#pic {
+.pic-holder:hover {
+    transform: rotate(-1deg);
+    outline-offset: 0px;
+}
+.pic {
     width: 100%;
     transition:1s;
     position: relative;
 }
-#cover {
+.cover {
     position: absolute;
     bottom: 0%;
     color: #0000;
     height: 100%;
     width: 100%;
-    transition: 0.4s;
+    transition: 1s;
 }
-#cover:hover{
+.cover:hover{
     color: black;
     background-color: #AAA8;
 }
-#label{
-    color:inherit;
+.label-set div:nth-of-type(2){
+    color: white;
+    transition: 1s;
+}
+.label-set:hover  div:nth-of-type(2){
+    color: #0000;    
+}
+.label{
     font-family: 'Goblin One';
     text-align: center;
+    padding: 5px;
+}
+.label2{
+    text-align: end;
 }
 #right-side{
-    background-color: greenyellow;
+    background-color: #281e27;
     z-index: 10;
 
     font-family: 'Goblin One';
-    font-size: 60pt;
-    color: #fff;
-    text-shadow: 5px 3px #999;
+    font-size: 3rem;
+    /* color: #fff; */
+    color: white;
+    /* text-shadow: 5px 3px #999; */
+    text-shadow: 5px 3px var(--faded-glory);
 }
 #second-half{
-    background-color: red;
     width: 100vw;
     height: 100vh;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+
+    padding: 10px;
+
+    font-family: 'Goblin One';
+}
+details li{
+    list-style: circle;
+}
+.nav-link:hover, a:hover{
+    cursor:pointer;
+    color: goldenrod;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+}
+article{
+    border: 2px solid var(--faded-glory);
+    margin: 10px;
+}
+pre{
+    padding: 10px;
+    
 }

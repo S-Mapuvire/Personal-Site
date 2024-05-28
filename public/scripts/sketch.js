@@ -1,6 +1,8 @@
+// TO-DO - fix so height and width are dynamic - windowWidth currently only loads once
+
 function setup()
 {
-    // fix so height and width are dynamic - windowWidth only loads once
+    
     let pad = createCanvas(windowWidth, 600);
     pad.parent('canvas-layer');
     console.log(document.querySelector('main').style)

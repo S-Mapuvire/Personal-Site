@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Comfortaa';
-    font-weight: normal;
     
     --faded-glory: #998200;
+}
+html{
+    font-family: 'Comfortaa';
+    font-weight: normal;
 }
 body {
     background-color:hsl(307, 29%, 8%);
