@@ -17,7 +17,7 @@
 <body>
     <header>
         <details>
-            <nav>
+            <nav id="site-links">
                 <ul>
                     <a href="index.html" class="nav-link"><li>Home</li></a>
                     <a href="Code.html" class="nav-link"><li>Code</li></a>
@@ -33,79 +33,152 @@
     </header>
     <main>
         <div id="title">
-            <h2>Just a small sampling of coding languages known.</h2>
+            <h2>Just a small sampling of coding languages that I've done stuff with.</h2>
             <h2>Though there's a link to Github at the bottom.</h2>
+            <input id="selector" type="text" placeholder="Type Language Section">
         </div>
-        <input id="selector" type="text" placeholder="Type Language Section">
+
+        <section id="code-area">
+            <nav id="code-example-links">
+                <ul>
+                    <li><a href="#cpp">C++</a></li>
+                
+                    <li><a href="#csharp">C#</a></li>
+        
+                    <li><a href="#python">Python</a></li>
+                    <li><a href="#pyqt">PyQT</a></li>
+                    <li><a href="#beautifulSoup">BeautifulSoup</a></li>
+                    
+                    <li><a href="#pywin">PyWin</a></li>
+                    
+                    <li><a href="#html">HTML</a></li>
+                    
+                    
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#sass">SASS</a></li>
+                    <li><a href="#tailwind">TailWind</a></li>
+                    <li><a href="#bootstrap">BootStrap</a></li>
+        
+                    <li><a href="#javaxcript">JavaScript</a></li>
+                    <li><a href="#p5">p5.js</a></li>
+                    <li><a href="#vue">Vue.js</a></li>
+                    <li><a href="#selte">Svelte.js</a></li>
+                    
+                    <li><a href="#sql">SQL</a></li>
+        
+                    <li><a href="#mongodb">MongoDB</a></li>
+        
+                    <li><a href="#lua">Lua</a></li>
+                    <li><a href="#rainmeter">Rainmeter</a></li>
+                </ul>
+            </nav>
+    
+            <section id="code-examples">
+                <section>
+                    <h3>C++</h3>
+                    <h5>Example Program: </h5>
+                </section>
+                
+                <section>
+                    <h3>C#</h3>
+                    <h5>Example Program: </h5>
+                </section>
+    
+                <section id="python-examples">
+                    <section>
+                        <h3>Python</h3>
+                        <h5>Example Program: </h5>
+                    </section>
+                    
+                    <section>
+                        <h4>PyQT</h4>
+                        <p>PyQT is sooo handy for turning python scripts I write into easily runnable programs - with a GUI...and buttons. I like buttons. </p>
+                        <h5>Example Program: Easy Folder Maker </h5>
+                        <img src="/images/programs/Folder Maker Screenshot.png" alt="">
+                        <p>Sometimes I need to make many folders at once, and want them to have a certain name structure - so this is a handy little tool with a cute interface.</p>
+                    </section>
+                    
+                    <section>
+                        <h4>BeautifulSoup</h4>
+                        <h5>Example Program: </h5>
+                    </section>
+                    
+                    <section>
+                        <h4>PyWin</h4>
+                        <h5>Example Program: </h5>
+                    </section>
+                </section>
+                
+                <section>
+                    <h3>HTML</h3>
+                    <h5>Example Program: </h5>
+                </section>
+                
+                <section id="css-examples">
+                    <section>
+                        <h3>CSS</h3>
+                        <h5>Example Program: </h5>
+                    </section>
+                    
+                    <section>
+                        <h4>SASS</h4>
+                        <h5>Example Program: </h5>
+                    </section>
+    
+                    <section>
+                        <h4>TailWind</h4>
+                        <h5>Example Program: </h5>
+                    </section>
+                    
+                    <section>
+                        <h4>BootStrap</h4>
+                        <h5>Example Program: </h5>
+                    </section>
+                </section>
+    
+                <section id="javascript-examples">
+                    <section>
+                        <h3>JavaScript</h3>
+                        <h5>Example Program: </h5>
+                    </section>
+    
+                    <section>
+                        <h4>p5.js</h4>
+                        <h5>Example Program: </h5>
+                    </section>
+    
+                    <section>
+                        <h4>Vue</h4>
+                        <h5>Example Program: </h5>
+                    </section>
+                </section>
+    
+                <section>
+                    <h3>SQL</h3>
+                    <h5>Example Program: </h5>
+    
+                    <h3>MongoDB</h3>
+                    <h5>Example Program: </h5>
+                </section>
+    
+                <section>
+                    <h3>Lua</h3>
+                    <p>Rainmeter</p>
+                    <h5>Example Program: </h5>
+                </section>
+            </section>
+        </section>
 
         <!-- 
-        <div id="code-samples">
-            <div class="code-box">
-                <details>
-                    <h3  class="subsection-header">To be added</h3>
-                    <summary><h2>C++</h2></summary>
-                    <pre><code id=""></code></pre>
-                </details>
-            </div>
-            <div class="code-box">
-                <details>
-                    <h3 class="subsection-header">PyQT</h3>
-                    
-                    <details>
-                        <img src="images/programs/Folder Maker Screenshot.png" alt="">
-                        <summary><h4>Folder Maker Screenshot</h4></summary>
-                    </details>
-                    
-                    <h3 class="subsection-header">BeautifulSoup</h3>
-                    <pre><code></code></pre>
-                    <h3 class="subsection-header">PyWin (Win64 API)</h3>
-                    <pre><code></code></pre>
-                    <summary><h2>Python</h2></summary>
-                    <pre><code id=""></code></pre>
-                </details>
-            </div>
-            <div class="code-box">
-                <details>
-                    <h3 class="subsection-header">React, Svelte, Vue, P5, JS, HTML, CSS, SASS, Bootstrap, TailWind  </h3>
-                    <summary><h2>Front-End Web Dev</h2></summary>
-                    <pre><code id=""></code></pre>
-                </details>
-            </div>
-            <div class="code-box">
-                <details>
-                    <h3 class="subsection-header">SQL, MongoDB, AWS</h3>
-                    <summary><h2>Back-End Web Dev</h2></summary>
-                    <pre><code id=""></code></pre>
-                </details>
-            </div>
-            <div class="code-box">
-                <details>
-                    <h3 class="subsection-header">To be added</h3>
-                    <summary><h2>Rainmeter</h2></summary>
-                    <pre><code id=""></code></pre>
-                </details>
-            </div>
-            <div class="code-box">
-                <details>
-                    <h3 class="subsection-header">To be added</h3>
-                    <summary><h2>Lua</h2></summary>
-                    <pre><code id=""></code></pre>
-                </details>
-            </div>
-            <div class="code-box">
-                <details>
-                    <h3 class="subsection-header">Trees - Red-Black Trees, State Machines, Linked List, Heaps</h3>
-                    <summary><h2>Data Structures</h2></summary>
-                    <pre><code id=""></code></pre>
-                </details>
-            </div>
-        </div> -->
+        <h3 class="subsection-header">Trees - Red-Black Trees, State Machines, Linked List, Heaps</h3>
+        -->
     </main>
     
     <footer></footer>
 
     <script src="scripts/code-examples.js"></script>
-    <script src="scripts/footer.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="scripts/footer-vue.js"></script>
 
 </body>
 </html>

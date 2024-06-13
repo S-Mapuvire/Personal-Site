@@ -6,7 +6,6 @@
   - make canvas dynamically sized
   - maybe add pages for resume, liked reading and games made?
 
-
 -->
 
 <!DOCTYPE html>
@@ -39,18 +38,15 @@
       </div>
     </main>
 
-    <footer></footer>
-
-    <div id="app">
-      {{test}}
-    </div>
+    <footer id="app"> <credits/> </footer>
 
     <script src="scripts/p5.js"></script>
     <script src="scripts/sketch.js"></script>
 
-    <script src="scripts/footer.js"></script>
-
-    <!-- <script src="https://unpkg.com/vue@3"></script> -->
-    <!-- <script src="scripts/app.js" type="module"></script> -->
+    <!-- add code for checking if scripts and if vue has loaded -->
+    <!-- <script id="fakecode" src="scripts/dummy.js"></script> -->
+    <!-- <script id="fakecode" src="scripts/accessDB.js" type="module"></script> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="scripts/footer-vue.js"></script>
   </body>
 </html>
