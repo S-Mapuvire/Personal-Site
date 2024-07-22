@@ -1,15 +1,12 @@
-// TO-DO - fix so height and width are dynamic - windowWidth currently only loads once
-
 function setup()
 {
-    
-    let pad = createCanvas(windowWidth, 600);
+    let pad = createCanvas(windowWidth, windowHeight);
     pad.parent('canvas-layer');
-    console.log(document.querySelector('main').style)
 }
+
 function draw(){
+    background(26, 14, 25);
+    
+    stroke(100);
     circle(mouseX, mouseY, 30);
-    background(26, 14, 25, 40);
-    fill(244);
-    stroke(0);
 }

@@ -9,7 +9,7 @@ const credits = {
                 "Code Examples":[],
                 "Cooking":["MongoDB"],
                 "Drawings":[],
-                "Personal Home Page":["p5.js"],
+                "Portfolio Home Page":["p5.js"],
                 "Photos":[],
                 "Resume":[],
                 "Writings":["MongoDB"],},
@@ -19,9 +19,9 @@ const credits = {
         technologiesUsed (){
             if (document.title in this.specificPageTechnologies)
                 {
-                  return `${this.pageTechnologies[0]}, ${this.pageTechnologies[1]}, ${this.pageTechnologies[2]} and ${this.specificPageTechnologies[document.title]}`
+                    return `${this.pageTechnologies[0]}, ${this.pageTechnologies[1]}, ${this.pageTechnologies[2]} and ${this.specificPageTechnologies[document.title]}`
                 }
-                else{
+            else {
                   return `${this.pageTechnologies[0]}, ${this.pageTechnologies[1]}, and ${this.pageTechnologies[2]}`
                 }
             }

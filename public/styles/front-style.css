@@ -10,12 +10,20 @@
     cursor: none;
 }
 /* ----------------------------------------------------------- */
+html{
+}
+#loading {
+    background-color: red;
+}
+main, header {
+    display: none;
+}
+/* ----------------------------------------------------------- */
 header, footer {
     cursor: default;
     background-color: var(--header-background);
     color: var(--header-colour);
 }
-
 header{
     text-align: end;
     padding: 5px;
@@ -23,7 +31,7 @@ header{
 }
 /* ----------------------------------------------------------- */
 main {
-    height: 50vh;
+    height: calc(100vh - 220px);
 }
 /* ----------------------------------------------------------- */
 canvas {
@@ -33,17 +41,17 @@ canvas {
 }
 /* ----------------------------------------------------------- */
 .link-box{
-    border: 1px solid white;
-
-    width: 100px;
+    width: 120px;
     height: 50px;
 }
 .link{
     cursor: none;
-
+    
     display: block;
     align-content: center;
     text-align: center;
+
+    outline: 1px solid white;
 
     width: 100%;
     height: 100%;
@@ -52,6 +60,8 @@ canvas {
     border: 1px solid hsl(51, 100%, 50%);
 
     background-color: rgba(255, 217, 0, 0.1);
+
+    transform: scale(1.05);
 
     text-shadow: 1px 1px 10px white;
     box-shadow: 
@@ -71,26 +81,85 @@ canvas {
 /* ----------------------------------------------------------- */
 #photos {
     position: relative;
-    left: 20%;
-    top: 40px;
+    left: 20vw;
+    top: 60vh;
 }
 #code{
     position: relative;
-    left: 80%
+    left: 20vw
 }
 #cooking{
-    position: relative;
-    left: 50%;
-    top: 100px; 
+    /* position: relative; */
+    left: 50vw;
+    top: 100vw; 
 }
 #drawing {
     position: relative;
-    left: 20%;
-    top: 200px; 
+    left: 55vw;
+    top: 50vh; 
 }
 #writing {
     position: relative;
-    left: 80%;
-    top: 200px;
+    left: 80vw;
+    top: 35vh;
 }
 /* ----------------------------------------------------------- */
+#footer-header{
+    font-weight: bold;
+}
+.footer-link:hover{
+    text-shadow: 1px 1px 30px rgba(255, 255, 255, 1);
+    font-weight: 800;
+}
+.footer-link::after{
+    content: "";
+    mask-image: url(../images/icons/arrow.svg);
+    display: inline-block;
+    margin: 2px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+hr{
+    border: none;
+    border-top: 1px solid hsl(51, 100%, 30%);
+    margin: 10px 0;
+}
+.footer-label{
+    padding: 5px 5px 5px 0;
+}
+footer{
+    border-bottom: 3px double hsl(51, 100%, 30%);
+}
+/* ----------------------------------------------------------- */
+@media (height < 600px) {
+    main {
+        height: 50vh;
+    }
+    #photos {
+        position: relative;
+        left: 15vw;
+        top: 30vh;
+    }
+    #code{
+        position: relative;
+        left: 20vw
+    }
+    #cooking{
+        /* position: relative; */
+        left: 50vw;
+        top: 100vw; 
+    }
+    #drawing {
+        position: relative;
+        left: 55vw;
+        top: 15vh; 
+    }
+    #writing {
+        position: relative;
+        left: 80vw;
+        top: 8vh;
+    }
+
+    
+}

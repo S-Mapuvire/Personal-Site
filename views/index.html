@@ -3,8 +3,9 @@
 
   - implement some neat canvas thing for the front page, or even a rolling set of canvas displays
   - make responsive and accessible for phone and desktop
-  - make canvas dynamically sized
-  - maybe add pages for resume, liked reading and games made?
+  - make canvas dynamically sized - DONE
+  - make front page blank until loaded - DONE, almost
+  - maybe add pages for resume and games made?
 
 -->
 
@@ -16,21 +17,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/base-style.css">
     <link rel="stylesheet" href="styles/front-style.css">
-    <title>Personal Home Page</title>
+    <title>Portfolio Home Page</title>
   </head>
   
   <body>
+    <article id="loading">
+      Loading
+    </article>
     <header>
-      <h1>Welcome to the Personal Site of S.Mapuvire!</h1>
+      <h1>Welcome to the Portfolio Site of S.Mapuvire!</h1>
     </header>
     
     <main>
       <div id="canvas-layer">
         <nav id="links-container">
           <ul>
-            <li class="link-box" id="photos"><a class="link" href="Photos.html">Photos</a></li>
+            <li class="link-box" id="photos"><a class="link" href="Photography.html">Photography</a></li>
             <li class="link-box" id="code"><a class="link" href="Code.html">Code</a></li>
-            <li class="link-box" id="cooking"><a class="link" href="Cooking.html">Cooking</a></li>
+            <!-- <li class="link-box" id="cooking"><a class="link" href="Cooking.html">Cooking</a></li> -->
             <li class="link-box" id="drawing"><a class="link" href="Drawing.html">Drawings</a></li>
             <li class="link-box" id="writing"><a class="link" href="Writing.html">Writings</a></li>
           </ul>
@@ -38,15 +42,30 @@
       </div>
     </main>
 
-    <footer id="app"> <credits/> </footer>
+    <footer> 
+      <div id="footer-link-area">
+        <p id="footer-header">My Other Accounts</p>
+        <ul id="footer-links">
+          <li><a href="https://flickr.com/photos/200206300@N03/" class="footer-link">Flickr</a></li>
+          <li><a href="mailto:smapuvire@proton.me" class="footer-link">Email Address</a></li>
+          <li><a href="https://github.com/S-Mapuvire" class="footer-link">Github</a></li>
+          <li><a href="https://nothingheretosee79.wordpress.com/" class="footer-link">WordPress - Currently Blank</a></li>
+          <li><a href="https://yumnothingsoup.neocities.org/" class="footer-link">Neocities Page - Currently Empty</a></li>
+        </ul>
+      </div>
+      
+      <hr>
+      
+      <p class="footer-label"> &copy; S.Mapuvire 2024 </p>
+    </footer>
 
     <script src="scripts/p5.js"></script>
-    <script src="scripts/sketch.js"></script>
+    <script src="scripts/p5_StarField.js"></script>
+    <!-- <script src="scripts/sketch.js"></script> -->
+    <script defer src="scripts/front-page-setup.js"></script>
 
-    <!-- add code for checking if scripts and if vue has loaded -->
+    <!-- add code for checking if scripts has loaded -->
     <!-- <script id="fakecode" src="scripts/dummy.js"></script> -->
     <!-- <script id="fakecode" src="scripts/accessDB.js" type="module"></script> -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="scripts/footer-vue.js"></script>
   </body>
 </html>
